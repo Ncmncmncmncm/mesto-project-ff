@@ -25,6 +25,6 @@ function handleDelete(cardElement) {
 }
 // @todo: Вывести карточки на страницу
 initialCards.forEach(cardData => {
-  const cardElement = createCard(cardData);
+  const cardElement = createCard(cardData, handleDelete);
   cardList.append(cardElement);
 });
